@@ -3,6 +3,7 @@ import Cta from "@/components/cta";
 import Explore from "@/components/explore";
 import Faq from "@/components/faq";
 import Features from "@/components/features";
+import Header from "@/components/header";
 
 import HeroSection from "@/components/hero-section";
 import Platform from "@/components/platform";
@@ -33,7 +34,7 @@ const sliderImages = [
 export default function Home() {
   return (
     <>
-  
+  <Header/>
     <main>
      <HeroSection images={sliderImages} autoPlayInterval={5000} />
      <LaunchTimer/>

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import { useState } from "react";
 import { AlignJustify, X } from "lucide-react";
 
 
-export default function header() {
+export default function Header() {
      const [isOpen, setIsOpen] = useState(false);
   return (
     <header className='w-full h-[100px] flex absolute top-0 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm justify-between items-center z-50'>
