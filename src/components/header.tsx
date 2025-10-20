@@ -1,13 +1,12 @@
-"use client"
-import React, { useState } from 'react';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import Image from 'next/image';
-import { AlignJustify, X } from 'lucide-react';
+import Link from "next/link";
+import { Button } from "./ui/button";
+import Image from "next/image";
+import { useState } from "react";
+import { AlignJustify, X } from "lucide-react";
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
 
+export default function header() {
+     const [isOpen, setIsOpen] = useState(false);
   return (
     <header className='w-full h-[100px] flex absolute top-0 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm justify-between items-center z-50'>
       <main className='w-full md:w-[1240px] h-[100px] mx-auto flex items-center justify-between px-4 md:px-0'>
@@ -53,7 +52,6 @@ export default function Header() {
         </div>
       </main>
     </header>
-  );
-};
+  )
+}
 
-;
