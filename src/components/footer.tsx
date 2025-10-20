@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
 
-export default function Footer ()  {
+
+export default function Footer() {
   return (
-    <footer className='w-full h-auto py-16 px-8 flex flex-col gap-[48px] items-center justify-center text-app-off-white font-outfit' style={{ backgroundImage: 'url(/footer-background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }} >
+     <footer className='w-full h-auto py-16 px-8 flex flex-col gap-[48px] items-center justify-center text-app-off-white font-outfit' style={{ backgroundImage: 'url(/footer-background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }} >
       <main className='w-full max-w-[1240px] grid grid-cols-2 lg:grid-cols-5 gap-12 text-center md:text-left'>
         <div className='col-span-2 md:col-span-1 flex flex-col items-center md:items-start gap-4'>
           <Image src="/horizontal-logo-white.svg" alt='logo' width={120} height={41}/>
@@ -59,7 +59,6 @@ export default function Footer ()  {
         </div>
       </main>
     </footer>
-  );
-};
-
+  )
+}
 

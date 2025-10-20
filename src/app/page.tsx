@@ -3,6 +3,7 @@ import Cta from "@/components/cta";
 import Explore from "@/components/explore";
 import Faq from "@/components/faq";
 import Features from "@/components/features";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 import HeroSection from "@/components/hero-section";
@@ -47,7 +48,7 @@ export default function Home() {
      <Faq/>
     </main>
 
-
+<Footer/>
     </>
   );
 }
