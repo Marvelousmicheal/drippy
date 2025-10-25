@@ -35,20 +35,32 @@ const sliderImages = [
 export default function Home() {
   return (
     <>
-  <Header/>
-    <main>
-     <HeroSection images={sliderImages} autoPlayInterval={5000} />
-     <LaunchTimer/>
-     <Features/>
-     <Explore/>
-     <Benefits/>
-     <Platform/>
-     <Testimonials/>
-     <Cta/>
-     <Faq/>
-    </main>
+      <Header />
+      <main>
+        <div id="hero-section">
+          <HeroSection images={sliderImages} autoPlayInterval={5000} />
+        </div>
+        <div id="about">
+          <LaunchTimer />
+        </div>
+        <div id="features">
+          <Features />
+        </div>
+        <div id="explore">
+          <Explore />
+        </div>
+        <div id="benefits">
+          <Benefits />
+        </div>
+        <div id="platform">
+          <Platform />
+        </div>
+        <Testimonials />
+        <Cta />
+        <Faq />
+      </main>
+      <Footer />
 
-<Footer/>
     </>
   );
 }

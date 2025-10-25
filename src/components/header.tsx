@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { Button } from "./ui/button";
 import Image from "next/image";
 import { useState } from "react";
 import { AlignJustify, X } from "lucide-react";
@@ -23,15 +22,15 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className='font-outfit text-base text-white hidden md:flex gap-[70px] items-center'>
-          <Link href="/" className='font-semibold'>Home</Link>
-          <Link href="/" className='font-normal'>Closet</Link>
-          <Link href="/" className='font-normal'>Creator center</Link>
-          <Link href="/" className='font-normal'>Vendor center</Link>
+          <Link href="#hero-section" className='font-normal'>Home</Link>
+          <Link href="#explore" className='font-normal'>Closet</Link>
+          <Link href="#platform" className='font-normal'>Creator center</Link>
+          <Link href="#benefits" className='font-normal'>Vendor center</Link>
         </nav>
 
-        <Button className='bg-app-black px-[18px] py-[13px] h-[50px] rounded-[40px] text-app-white font-semibold text-base hidden md:block'>
+        <a href="mailto:contact@driply.net" className='bg-app-black px-[18px] py-[13px] h-[50px] rounded-[40px] text-app-white font-semibold text-base hidden md:flex items-center justify-center'>
           Contact us
-        </Button>
+        </a>
 
         {/* Mobile Navigation */}
         <div
@@ -42,13 +41,13 @@ export default function Header() {
           `}
         >
           <nav className='font-outfit text-base text-white flex flex-col items-center justify-center h-full gap-8'>
-            <Link href="/" className='font-semibold text-2xl' onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Closet</Link>
-            <Link href="/" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Creator center</Link>
-            <Link href="/" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Vendor center</Link>
-            <Button className='bg-white text-app-black px-[18px] py-[13px] h-[50px] rounded-[40px] font-semibold text-base mt-8'>
+            <Link href="#hero-section" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="#explore" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Closet</Link>
+            <Link href="#platform" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Creator center</Link>
+            <Link href="#benefits" className='font-normal text-2xl' onClick={() => setIsOpen(false)}>Vendor center</Link>
+            <a href="mailto:contact@driply.net" className='bg-white text-app-black px-[18px] py-[13px] h-[50px] rounded-[40px] font-semibold text-base mt-8 flex items-center justify-center'>
               Contact us
-            </Button>
+            </a>
           </nav>
         </div>
       </main>
