@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface ImageSliderProps {
     images: {
@@ -59,23 +60,29 @@ export default function HeroSection({ images, autoPlayInterval = 5000 }: ImageSl
                     <h1 className="font-akira text-4xl lg:text-[63px]">{currentImage.title}</h1>
                     <p className="text-lg md:text-xl max-w-xl text-balance">{currentImage.description}</p>
                     <div className="flex flex-col sm:flex-row gap-8">
-                        <Button className="w-[220px] h-[66px] bg-white rounded-[10px] flex gap-3 text-app-black" >
+                        <Button className="w-[220px] h-[66px] bg-white hover:bg-white/90 rounded-[10px] text-app-black" >
+                         <Link className="flex gap-3 " href="https://play.google.com/store/search?q=driply&c=apps&hl=en" target="_blank" >
+                         
                             <div>
-                                <Image src="google-play.svg" alt="google play" width={40} height={40} />
+                                <Image src="/google-play.svg" alt="google play" width={40} height={40} />
                             </div>
                             <div className="text-left">
                                 <p className="font-semibold text-[11px]">Available on</p>
                                 <p className="font-semibold text-[19px]">Google Play</p>
                             </div>
+                         </Link>
                         </Button>
-                        <Button className="w-[220px] h-[66px] rounded-[10px] flex gap-3 text-black bg-white" >
+                        
+                        <Button className="w-[220px] h-[66px] rounded-[10px] text-black hover:bg-white/90 bg-white" >
+                        <Link className="flex gap-3 " href="https://apps.apple.com/ng/app/driply/id6636497539" target="_blank" >
                             <div>
-                                <Image src="apple-store-white.svg" alt="apple-store" width={40} height={40} />
+                                <Image src="/apple-store-white.svg" alt="apple-store" width={40} height={40} />
                             </div>
                             <div className="text-left">
                                 <p className="font-semibold text-[11px]">Available on</p>
                                 <p className="font-semibold text-[19px]">App Store</p>
                             </div>
+                        </Link>
                         </Button>
                     </div>
                 </div>
